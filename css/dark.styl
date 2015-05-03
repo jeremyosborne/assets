@@ -1,0 +1,101 @@
+/* Base dark theme for a page. */
+
+// Foreground, main text color.
+fgColor = #ede4da
+// Background color.
+bgColor = #4c595d
+// Mainly for links.
+highlightColor = #bbd2db
+// Secondary subdued color.
+fgSecondaryColor = #bbad8d
+// Tertiary faded color.
+fgTertiaryColor = #8a8987
+
+// Special colors for code.
+fgCodeColor = #00f000
+bgCodeColor = black
+
+// For the noscript warning.
+bgWarningColor = #a66919
+
+
+
+*
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+body
+    background-color: bgColor
+    color: fgColor
+    font-size: 1.2em
+    font-family: Georgia, "Times New Roman", Times, serif
+    line-height: 1.4
+    -webkit-font-smoothing: antialiased
+
+h1, h2, h3, h4, h5, h6
+    font-family: Helvetica, Arial, sans-serif
+    margin: 0
+    font-weight: normal
+    line-height: 1.1
+
+h1
+    font-size: 2em
+
+h2
+    font-size: 1.8em
+
+h3
+    font-size: 1.6em
+
+h4
+    font-size: 1.4em
+
+h5
+    font-size: 1.3em
+
+h6
+    font-size: 1.2em
+
+a, a:visited, a:link, a:active
+    color: highlightColor
+    text-decoration: none
+
+a:hover
+    text-decoration: underline
+
+p
+    margin-top: 0
+
+blockquote
+    padding-left: 0.5em
+    border-left: 1px solid fgSecondaryColor
+    color: fgSecondaryColor
+
+footer
+    text-align: center
+    color: fgTertiaryColor
+    clear: both
+
+
+
+noscript .warning
+    text-align: center
+    color: white
+    font-size: 2em
+    background-color: bgWarningColor
+    padding: 1em 0
+
+code, .code
+    color: fgCodeColor
+    background-color: bgCodeColor
+
+pre, pre.code
+    padding: 0.2em
+    /* pre code can overrun x-boundaries quite easily. */
+    overflow-x: scroll
+
+pre > code
+    min-width: 100%
+    display: inline-block
+    padding: 0.2em

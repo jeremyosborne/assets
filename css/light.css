@@ -1,0 +1,89 @@
+/***************************************************************** Defaults */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 1.2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.3em;
+}
+h6 {
+  font-size: 1.2em;
+}
+a,
+a:visited,
+a:link,
+a:active {
+  color: #175269;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  margin-top: 0;
+}
+blockquote {
+  padding-left: 0.5em;
+  border-left: 1px solid #5a4411;
+  color: #5a4411;
+}
+footer {
+  text-align: center;
+  color: #8a8987;
+  clear: both;
+}
+noscript .warning {
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  background-color: #a66919;
+  padding: 1em 0;
+}
+code,
+.code {
+  color: #00f000;
+  background-color: #000;
+}
+pre,
+pre.code {
+  padding: 0.2em;
+/* pre code can overrun x-boundaries quite easily. */
+  overflow-x: scroll;
+}
+pre > code {
+  min-width: 100%;
+  display: inline-block;
+  padding: 0.2em;
+}
